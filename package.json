@@ -1,0 +1,25 @@
+{
+  "name": "themovietheater",
+  "version": "1.0.0",
+  "description": "A web application which uses the API from themoviedb.org. You can search for you favorite movies and save it. Saved data will persist even if you restart de browser.",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "keywords": [
+    "themoviedb",
+    "api",
+    "javascript",
+    "javascript",
+    "es6",
+    "fetch",
+    "ipatov",
+    "robert",
+    "ipatov"
+  ],
+  "author": "Ipatov Robert-Bogdan",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.13.0"
+  }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>THE MOViE Theater</title>
+
+    <!-- MY CSS FILE -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- GOOGLE FONTS-->
+    <!-- Font weights:  400 Regular, 500 Medium, 700 Bold-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+
+        <!--Navbar-->
+        <div class="navbar">
+            <a href="/index.html" class="nav-logo"><span class="superscript">THE</span> <span class="uppercase">MOV</span>i<span class="uppercase">E</span> <span class="uppercase">THEATER</span></a>
+            <a href="/index.html" class="nav-item">Home</a>
+        </div>
+
+        <!--Movie background-->
+        <div class="movie-background">
+            <!-- Image is inside _movieBg.scss set as background-image -->
+        </div>
+
+        <div class="movie-details">
+            <div class="movie-details--image">
+                <img src="" alt="">
+            </div>
+            <div class="movie-details--presentation">
+                <h1 class="movie-title"></h1>
+                <p class="movie-paragraph"></p>
+                <p class="movie-release"></p>
+            </div>
+
+            <div class="movie-details--stats">
+                <p id="genre"><span class="bold">Genre:</span> <span id='genreArr'></span></p>
+                <p id="runtime"><span class="bold">Runtime:</span> <span id='runtimeValue'></span></p>
+                <p id="status"><span class="bold">Status:</span> <span id='statusValue'></span></p>
+                <p id="avgScr"><span class="bold">Average Score:</span> <span id='avgScrValue'></span></p>
+
+            </div>
+        </div>
+
+        <div class="similar-movies">
+            <h2 class="simMovies">Similar movies...</h2>
+            <div class="similar-movies--container">
+                <div class="similar-items"><a href=""><img id="similarMovies" src="" alt=""></a></div>
+                <div class="similar-items"><a href=""><img id="similarMovies" src="" alt=""></a></div>
+                <div class="similar-items"><a href=""><img id="similarMovies" src="" alt=""></a></div>
+                <div class="similar-items"><a href=""><img id="similarMovies" src="" alt=""></a></div>
+                <div class="similar-items"><a href=""><img id="similarMovies" src="" alt=""></a></div>
+
+            </div>
+        </div>
+
+        <!--COPYRIGHT-->
+        <div class="copyright">
+                <p class="copyright-paragraph">Copyright ©️ THE MOVIE THEATER 2019-2020</p>
+        </div>
+
+    </div>
+    <script src="js/getMovieData.js"></script>
+    <script src="js/getSimilarMovies.js"></script>
+</body>
+</html>

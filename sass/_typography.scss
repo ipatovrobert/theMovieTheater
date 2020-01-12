@@ -1,0 +1,131 @@
+// SPANS
+.superscript {
+    vertical-align: super;
+    font-size: 1rem;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+
+// NAVBAR TYPOGRAPHY
+// FLOAT SETTINGS ARE INSIDE _navbar.scss FILE
+.nav-logo,
+.nav-logo:link,
+.nav-logo:visited,
+.nav-logo:active {
+    font-family: var(--primary-font);
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--color-black);
+
+    text-decoration: none;
+}
+
+.nav-item,
+.nav-item:link,
+.nav-item:visited,
+.nav-item:active {
+    font-family: var(--primary-font);
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--color-white);
+    text-decoration: none;
+
+    // Button-like settings
+    background-color: var(--color-black);
+    padding: 0.5rem 1rem;
+    border-radius: 10rem;
+}
+
+.search-content--search {
+    font-family: var(--primary-font);
+    font-size: 1.6rem;
+}
+
+.random-movie--btn,
+.random-movie--btn:active,
+.random-movie--btn:link,
+.random-movie--btn:visited {
+    font-family: var(--primary-font);
+    font-size: 1.6rem;
+    color: var(--color-light-grey);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.trending-heading {
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+.copyright-paragraph {
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 1.4rem;
+
+    color: var(--color-light-grey);
+    text-transform: uppercase;
+}
+
+.movie-title {
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-size: 3rem;
+}
+.movie-paragraph {
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+.movie-release {
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+.movie-details--stats {
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+.bold {
+    font-weight: 700;
+}
+
+.save-btn,
+.save-btn:active,
+.save-btn:link,
+.save-btn:visited {
+    font-family: var(--primary-font);
+    font-size: 2rem;
+    font-weight: 700;
+
+    color: black;
+    text-decoration: none;
+
+    border-style: solid;
+    border-width: 1.2px;
+    border-radius: 10rem;
+
+    padding: 0.2rem 1.7rem;
+}
+
+.simMovies {
+    font-family: var(--primary-font);
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.search-content--result {
+    a,
+    a:active,
+    a:link,
+    a:visited {
+        font-family: var(--primary-font);
+        font-size: 1.6rem;
+        color: royalblue;
+        text-decoration: none;
+    }
+}

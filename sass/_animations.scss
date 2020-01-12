@@ -1,0 +1,11 @@
+.nav-item {
+    transition: all .2s;
+
+    &:hover {
+        transform: scale(1.02);
+    }
+     
+    &:active {
+        transform: scale(0.95);
+    }
+}

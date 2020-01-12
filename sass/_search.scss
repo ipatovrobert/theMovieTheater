@@ -1,0 +1,55 @@
+.search {
+    text-align: center;
+    margin-top: 12rem;
+
+    &-logo {
+        margin-bottom: 2rem;
+    }
+
+    &-content {
+        display: inline-block;
+
+        min-height: 3rem;
+        width: 50rem;
+        
+        border-style: solid;
+        border-width: 1px;
+        border-color: var(--color-light-grey);
+        border-radius: 10rem;
+
+        text-align: left;
+
+        &--search {
+
+            //Font settings are inside typography under .search-content--search class
+
+            width: 40rem;
+            transform: translateY(0.6rem) translateX(2rem);
+
+            border-style: none;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        &--result {
+            margin-left: 2rem;
+            margin-top: 1rem;
+        }
+    }
+}
+
+.random-movie {
+    display: inline-block;
+
+    &--btn,
+    &--btn:active,
+    &--btn:link,
+    &--btn:visited {
+        float: right;
+        margin-top: 1rem;
+
+        //Font settings are inside typography under random-movie--btn class
+    }
+}

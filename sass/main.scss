@@ -1,0 +1,37 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5% // Fontsize 10px; 
+}
+
+body {
+    box-sizing: border-box;
+    background-image: linear-gradient(to right, var(--primary-bg), var(--secondary-bg));
+}
+
+// Variables
+@import "variables";
+
+// Typography 
+@import "typography";
+
+//Animations
+@import "animations";
+
+// Container, Navbar, Search, Trending, Copyright
+@import "container";
+@import "navbar";
+@import "search";
+@import "trending";
+@import "copyright";
+@import "movieBg";
+@import "movieDetails";
+@import "similarMovies";
+
+
