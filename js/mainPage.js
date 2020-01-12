@@ -22,7 +22,7 @@ document.querySelector('.search-content--search').addEventListener('keyup', func
     getMovies().then(data => {
         data.results.forEach(function(date){
             let x = document.createElement('div');
-            x.innerHTML = `<a href="/theMovieTheater/movie.html?id=${date.id}"> ${date.original_title} </a>`
+            x.innerHTML = `<a href="movie.html?id=${date.id}"> ${date.original_title} </a>`
             x.className = 'search-content--result';
             y.appendChild(x);
             console.log(date);
