@@ -22,7 +22,7 @@ document.querySelector('.search-content--search').addEventListener('keyup', func
     getMovies().then(data => {
         data.results.forEach(function(date){
             let x = document.createElement('div');
-            x.innerHTML = `<a href="https://ipatovrobert.github.io/theMovieTheater/movie.html?id=${date.id}"> ${date.original_title} </a>`
+            x.innerHTML = `<a href="/movie.html?id=${date.id}"> ${date.original_title} </a>`
             x.className = 'search-content--result';
             y.appendChild(x);
         })
@@ -45,6 +45,6 @@ getTrendingMovies().then(data => {
         const movieLink = document.querySelectorAll('#trending-movies--link');
 
         movie[i].src = "https://image.tmdb.org/t/p/original" + data.results[i].poster_path;
-        movieLink[i].setAttribute('href', `https://ipatovrobert.github.io/theMovieTheater/movie.html?id=${data.results[i].id}`);
+        movieLink[i].setAttribute('href', `/movie.html?id=${data.results[i].id}`);
 }
 });
