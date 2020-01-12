@@ -22,6 +22,7 @@ document.querySelector('.search-content--search').addEventListener('keyup', func
     getMovies().then(data => {
         data.results.forEach(function(date){
             let x = document.createElement('div');
+            //Link is speciffic to 'https://ipatovrobert.github.io/theMovieTheater/' because of the limitetions of Github Pages
             x.innerHTML = `<a href="https://ipatovrobert.github.io/theMovieTheater/movie.html?id=${date.id}"> ${date.original_title} </a>`
             x.className = 'search-content--result';
             y.appendChild(x);
@@ -45,6 +46,7 @@ getTrendingMovies().then(data => {
         const movieLink = document.querySelectorAll('#trending-movies--link');
 
         movie[i].src = "https://image.tmdb.org/t/p/original" + data.results[i].poster_path;
+        //Link is speciffic to 'https://ipatovrobert.github.io/theMovieTheater/' because of the limitetions of Github Pages
         movieLink[i].setAttribute('href', `https://ipatovrobert.github.io/theMovieTheater/movie.html?id=${data.results[i].id}`);
 }
 });
