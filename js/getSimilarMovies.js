@@ -8,6 +8,7 @@ getSimilarMovies().then(data => {
     for(i = 0; i < 5; i++){
         document.querySelectorAll('#similarMovies')[i].setAttribute('src', `https://image.tmdb.org/t/p/original${data.results[i].poster_path}`);
         console.log(data.results[i].id);
+        //Link is speciffic to 'https://ipatovrobert.github.io/theMovieTheater/' because of the limitetions of Github Pages
         document.querySelectorAll('.similar-items a')[i].setAttribute('href', `https://ipatovrobert.github.io/theMovieTheater/movie.html?id=${data.results[i].id}`);
     }
 });
