@@ -25,7 +25,6 @@ document.querySelector('.search-content--search').addEventListener('keyup', func
             x.innerHTML = `<a href="https://ipatovrobert.github.io/theMovieTheater/movie.html?id=${date.id}"> ${date.original_title} </a>`
             x.className = 'search-content--result';
             y.appendChild(x);
-            console.log(date);
         })
     }
         );
