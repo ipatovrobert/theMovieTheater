@@ -14,7 +14,7 @@ document.querySelector('.search-content--search').addEventListener('keyup', func
     });
     const searchValue = document.querySelector('.search-content--search').value;
     async function getMovies() {
-        const response = await fetch(`https://api.themoviedb.org/3/search/movie?api_key=###&language=en-US&query=${searchValue}&page=1&include_adult=false`);
+        const response = await fetch(`https://api.themoviedb.org/3/search/movie?api_key=d0e19023b7e791711d2dc48e57d187c8&language=en-US&query=${searchValue}&page=1&include_adult=false`);
         const data = await response.json();
         return data;
     }
